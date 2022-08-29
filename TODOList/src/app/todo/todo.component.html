@@ -10,7 +10,7 @@
                     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                     <mat-hint>add task name</mat-hint>
                   </mat-form-field>
-                  <button mat-raised-button color="primary">Add</button>
+                  <button mat-raised-button [disabled]="todoForm.invalid" color="primary">Add</button>
             </form>
         </mat-card>
         </div>
